@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import ReactDom from "react-dom";
-//var Copyright = require('react-copyright');
+var Copyright = require('react-copyright');
 import "./assets/style.css";
 import quizService from "./quizService";
 import QuestionBox from "./components/QuestionBox";
@@ -67,4 +67,10 @@ class Quiz extends Component {
 
 ReactDom.render(<Quiz/>, document.getElementById("root"));
 
-ReactDom.render(document.getElementById("foot"))
+var Component = React.createClass({
+  render: function () {
+    return (
+      <Copyright>Sarvesh Patil</Copyright>
+    );
+  }
+});
