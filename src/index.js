@@ -61,12 +61,7 @@ class Quiz extends Component {
         this.state.responses === 5  ? (<Result score={this.state.score} playAgain={this.playAgain}/>)
           : null }
     </div>
-  <div className="foot">
-
-    <p>&copy; Copyright 2020 Sarvesh Patil<p>
-
-
-  </div>);
+);
   };
 }
 
