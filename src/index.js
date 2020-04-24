@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import ReactDom from "react-dom";
-var Copyright = require('react-copyright');
 import "./assets/style.css";
 import quizService from "./quizService";
 import QuestionBox from "./components/QuestionBox";
@@ -61,16 +60,14 @@ class Quiz extends Component {
       {
         this.state.responses === 5  ? (<Result score={this.state.score} playAgain={this.playAgain}/>)
           : null }
-    </div>);
+    </div>
+  <div className="foot">
+
+    <p>&copy; Copyright 2020 Sarvesh Patil<p>
+
+
+  </div>);
   };
 }
 
 ReactDom.render(<Quiz/>, document.getElementById("root"));
-
-var Component = React.createClass({
-  render: function () {
-    return (
-      <Copyright>Sarvesh Patil</Copyright>
-    );
-  }
-});
